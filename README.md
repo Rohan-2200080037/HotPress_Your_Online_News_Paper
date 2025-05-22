@@ -2,7 +2,7 @@
 HotPress is a responsive, real-time news web application built with Django, JavaScript, and the NewsAPI. It allows users to search the latest headlines, filter by category, and browse trending topics — all with a clean, modern UI and theme toggling.
 
 🌐 Live Preview
-(Optional: Add deployment link if hosted on Render, Vercel, or elsewhere)
+ Rohan7758.pythonanywhere.com
 
 🚀 Features
 🔎 Search Functionality – Search news by any topic like Technology, India, Sports, etc.
