@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News App</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+  <link rel="icon" href="/static/img.jpg" type="image/png" />
+</head>
+<body>
+  <div class="toggle-theme">
+    <button onclick="toggleTheme()">🌓 Toggle Theme</button>
+  </div>
+
+  <div class="container">
+    <h1>🗞️ Latest News Search</h1>
+
+    <div class="search-section">
+      <input type="text" id="search" placeholder="Search for a topic like India, Tech, Sports..." />
+      <button onclick="fetchNews(null, true)">Search</button>
+    </div>
+
+    <div class="utility-buttons">
+      <button onclick="showRecentSearches()">🕘 Recent Searches</button>
+    </div>
+
+    <div class="category-buttons">
+      <button onclick="fetchNews('Technology')">Technology</button>
+      <button onclick="fetchNews('Sports')">Sports</button>
+      <button onclick="fetchNews('India')">India</button>
+      <button onclick="fetchNews('World')">World</button>
+      <button onclick="fetchNews('Health')">Health</button>
+      <button onclick="fetchNews('Business')">Business</button>
+    </div>
+
+    <div id="loader" class="loader" style="display:none;"></div>
+
+    <h2 class="section-heading" id="section-title">🔥 Trending News</h2>
+    <div id="news-container" class="news-grid"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
